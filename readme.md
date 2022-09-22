@@ -1,6 +1,6 @@
 ![Website cover](https://raw.githubusercontent.com/CodeFoxDev/Codefoxdev/main/static/assets/Cover.png)
 <hr>
-Hi, I'm Robin de Vos, I'm a student at Minkema college, Woerden (https://goo.gl/maps/eUrJ4oEW9DcCg29A8).  <br>
+Hi, I'm Robin de Vos, I'm a student at ![Minkema college](https://goo.gl/maps/eUrJ4oEW9DcCg29A8), Woerden.  <br>
 And in my spare time I work on websites or opengl.  <br>
 I also like to play around with SVG or play some videogames, like Cities: skylines
 <hr>
