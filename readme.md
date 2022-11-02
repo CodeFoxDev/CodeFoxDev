@@ -5,7 +5,7 @@ And in my spare time I work on websites or opengl.  <br>
 I also like to play around with SVG or play some videogames, like Cities: skylines <br>
 Support me at:
 
- [https://ko-fi.com/codefoxdev](https://ko-fi.com/codefoxdev)
+ [https://www.buymeacoffee.com/codefoxdev](https://www.buymeacoffee.com/codefoxdev)
 
 <hr>
 - 🔭 I’m currently working on a node.js module pack	<br>
