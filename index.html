@@ -6,105 +6,129 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codefoxdev.com</title>
-  <link rel="stylesheet" href="/static/css/style.css">
-  <script src="https://kit.fontawesome.com/ae665bfb2e.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 
 <body>
+  <nav>
+    <div class="nav-progress"></div>
+    <a href="#top" class="nav-top">
+      <img src="/public/icons/top.svg" draggable="false">
+    </a>
+  </nav>
   <main>
-    <div class="page front grid-manual" style="--grid-item--min-width: 532px;">
-      <section class="align-items-center title-center-sm">
-        <div class="column" style="margin-inline: 1rem;">
-          <div id="title" class="title">
-            <h1 class="header-gradient fill type" style="--type-duration: 1.5s;">Hi, I'm Codefoxdev</h1>
-            <h1 class="header-gradient fill type" style="--type-duration: 1.1s; --type-delay: 1.5s; --width: 75%;">I'm a student</h1>
-            <h1 class="header-gradient fill type last" style="--type-duration: 1.5s; --type-delay: 2.6s;">and Web developer</h1>
-          </div>
-          <div id="underTitle" style="margin: 1rem;">
-            <code class="element-tag" data-content="<info>"></code><br>
-            <code style="padding-left: 1rem;">Frontend & Backend web developer</code><br>
-            <code style="padding-left: 1rem;">Junior c++ and opengl developer</code><br>
-            <code class="element-tag" data-content="</info>"></code>
-          </div>
-          <div id="titleButtons" style="margin-top: 1rem;">
-            <a href="#about" class="button code outline"><span>About me!</span></a>
-            <a href="#projects" class="button code outline reverse"><span>Projects</span></a>
-          </div>
+    <div class="front" id="top">
+      <div class="title">
+        <h1 class="header type" style="--width: 32rem">Hi, I'm Codefoxdev</h1>
+        <p>
+          I’m a 15 year old studying at Minkema college. I spend my time working on projects with Javascript, Vite and Nodejs.
+          I’m also interested in linux, open source and keeping the internet more private.
+        </p>
+        <div class="buttons">
+          <a href="#projects" class="button fill">Projects</a>
+          <a href="https://github.com/codefoxdev" class="button">Github</a>
+          <a href="https://www.buymeacoffee.com/codefoxdev" class="button">Support me</a>
         </div>
-      </section>
-      <section class="logo flex-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 209">
-          <defs>
-            <linearGradient id="gradient">
-              <stop class="stop1" offset="0%" />
-              <stop class="stop2" offset="100%" />
-            </linearGradient>
-            <style type="text/css">
-              .stop1 {
-                stop-color: #6ca0fc;
-              }
-        
-              .stop2 {
-                stop-color: #7d4bc3;
-              }
-            </style>
-          </defs>
-          <g class="fill">
-            <g class="border">
-              <polygon points="45,20 45,90 20,125 115,200 208,125 183,90 183,20 140,80 88,80" stroke="white" fill="none"
-                stroke-width="14" />
-            </g>
-            <g class="dev-tag">
-              <path d="M124,100 L104,170 M135,110 L160,130 L135,150 M93,110 L68,130 L93, 150" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-            </g>
-          </g>
-        </svg>
-      </section>
+      </div>
+      <div class="image">
+        <img src="/public/assets/logo_codefoxdev_svg.svg" draggable="false">
+      </div>
     </div>
-    <div class="page" id="about">
-      <h1 class="header-gradient fill" style="font-size: 2.5em;">About</h1>
-      <p>
-        Hi, I'm Robin de Vos, I'm a student at <a class="link" target="_blank" href="https://goo.gl/maps/eUrJ4oEW9DcCg29A8">Minkema college</a>. <br>
-        And in my spare time I work on websites or opengl.  <br>
-        I'm a front- and backend webdeveloper, who spelcializes in node.js <br>
-
-        Support me at: <a href="https://www.buymeacoffee.com/codefoxdev" class="link" target="_blank">buymeacoffee.com/codefoxdev</a>
-      </p>
+    <div class="projects" id="projects">
+      <h2 class="header">Projects</h2>
     </div>
-    <div class="page second" id="projects">
-      <h1 class="header-gradient fill" style="font-size: 2.5em;">Projects</h1>
-      <p>Here are some example projects i've worked on</p>
-      <div class="grid-manual" style="--grid-column-count: 99">
-        <a class="projects-link-item" href="https://github.com/CodeFoxDev/Codefoxdev/" target="_blank">
-          <div class="projects-item">
-            <img src="https://opengraph.githubassets.com/c062725c0faca80bc608000d0c1cc31716132a3725c898d8703f442c4a38286f/CodeFoxDev/Codefoxdev" alt="Codefoxdev - social preview">
-            <h2>Codefoxdev</h2>
-            <p>
-              The website you're currently viewing.
-            </p>
-          </div>
+    <div class="technical-skills" id="skills">
+      <h2 class="header">Technical skills</h2>
+      <div class="skills">
+        <div class="item" id="skill-javascript">
+          <img src="/public/icons/javascript.svg" draggable="false">
+          <p>Javascript</p>
+        </div>
+        <div class="item" id="skill-nodejs">
+          <img src="/public/icons/nodejs.svg" draggable="false">
+          <p>Nodejs</p>
+        </div>
+        <div class="item" id="skill-html">
+          <img src="/public/icons/html.svg" draggable="false">
+          <p>HTML</p>
+        </div>
+        <div class="item" id="skill-css">
+          <img src="/public/icons/css.svg" draggable="false">
+          <p>CSS</p>
+        </div>
+        <div class="item" id="skill-vite">
+          <img src="/public/icons/vite.svg" draggable="false">
+          <p>Vite</p>
+        </div>
+        <div class="item" id="skill-solid">
+          <img src="/public/icons/solid.svg" draggable="false">
+          <p>Solidjs</p>
+        </div>
+        <div class="item" id="skill-flutter">
+          <img src="/public/icons/flutter.svg" draggable="false">
+          <p>Flutter</p>
+        </div>
+        <div class="item" id="skill-dart">
+          <img src="/public/icons/dart.svg" draggable="false">
+          <p>Dart</p>
+        </div>
+        <div class="item" id="skill-linux">
+          <img src="/public/icons/linux.svg" draggable="false">
+          <p>Linux</p>
+        </div>
+        <div class="item" id="skill-git">
+          <img src="/public/icons/git.svg" draggable="false">
+          <p>Git</p>
+        </div>
+        <div class="item" id="skill-mongo">
+          <img src="/public/icons/mongo.svg" draggable="false">
+          <p>MongoDB</p>
+        </div>
+        <div class="item" id="skill-vercel">
+          <img src="/public/icons/vercel.svg" draggable="false">
+          <p>Vercel</p>
+        </div>
+      </div>
+      <div class="background">
+        <img src="/public/assets/slope_top.svg" draggable="false">
+        <div class="filler"></div>
+        <img src="/public/assets/slope_bottom.svg" draggable="false">
+      </div>
+    </div>
+    <div class="process">
+      <div class="item span-2" style="background: rgba(199, 200, 200, 0.05);">
+        <h1>UI/UX</h1>
+        <p>Interfaces that are intuitive, easy to navigate and accesible</p>
+      </div>
+      <div class="item span-2" style="background: var(--accent);">
+        <h1>Web and Mobile</h1>
+        <p>Ensuring smooth perfomance and device friendly designs</p>
+      </div>
+      <div class="item empty"></div>
+      <div class="item span-3" style="background: var(--secondary);">
+        <h1>Development</h1>
+        <p>Bringing concepts and dreams to life with modern and long-lasting technology</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo">
+        <img src="/public/assets/logo_codefoxdev_svg.svg">
+        <h1 class="header-footer">Codefoxdev</h1>
+      </div>
+      <div class="links">
+        <a href="https://github.com/codefoxdev" class="icon-link">
+          <img src="/public/icons/github.svg" draggable="false">
         </a>
-        <a class="projects-link-item" href="https://github.com/CodeFoxDev/Minimalist-new-tab/" target="_blank">
-          <div class="projects-item">
-            <img src="https://opengraph.githubassets.com/c062725c0faca80bc608000d0c1cc31716132a3725c898d8703f442c4a38286f/CodeFoxDev/Minimalist-new-tab" alt="Minimalist new tab - social preview">
-            <h2>Minimalist new tab</h2>
-            <p>
-              A minimalist new tab extenstion for Chrome.
-            </p>
-          </div>
-        </a>
-        <a class="projects-link-item" href="https://github.com/CodeFoxDev/Cym-center/" target="_blank">
-          <div class="projects-item">
-            <img src="https://opengraph.githubassets.com/c062725c0faca80bc608000d0c1cc31716132a3725c898d8703f442c4a38286f/CodeFoxDev/Cym-center" alt="Cym center - social preview">
-            <h2>Cym center</h2>
-            <p>
-              A website made for the projects made at Cym crea computer, view at cym.center
-            </p>
-          </div>
+        <a href="mailto:hello@codefoxdev.com" class="icon-link">
+          <img src="/public/icons/mail.svg" draggable="false">
         </a>
       </div>
     </div>
   </main>
+  <script src="/main.js" type="module"></script>
 </body>
 
 </html>
