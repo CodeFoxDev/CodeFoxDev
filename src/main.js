@@ -1,4 +1,4 @@
-import config from "./src/site.config.js";
+import config from "/src/site.config.js";
 
 const nav = document.querySelector(".nav-progress");
 const navTop = document.querySelector(".nav-top");
