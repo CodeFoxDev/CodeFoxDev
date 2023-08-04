@@ -1,4 +1,4 @@
-import config from "./public/site.config.js";
+import config from "./src/site.config.js";
 
 const nav = document.querySelector(".nav-progress");
 const navTop = document.querySelector(".nav-top");
@@ -18,7 +18,7 @@ function updateProgress() {
 (function() {
   config.projects.forEach(project => {
     const ele = document.createElement("div");
-    const src = project.src ?? `/public/projects/shot-${project.name}.png`;
+    const src = project.src ?? `/src/projects/shot-${project.name}.png`;
 
     ele.className = "project";
     ele.id = `project-${project.name}`;
@@ -49,7 +49,7 @@ function getDevIcons(project) {
 
   project.madeWith.forEach(item => {
     res += /*html*/`
-      <img src="/public/icons/${item}.svg" draggable="false">
+      <img src="/src/icons/${item}.svg" draggable="false">
     `;
   });
 
