@@ -3,6 +3,7 @@ import { on } from "./spa.js";
 
 function initListeners() {
   const title = document.querySelector("#title-type");
+  if (!title) return;
 
   let index = 0;
   let animationInProgress = false;
