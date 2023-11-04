@@ -1,5 +1,4 @@
 export default {
-<<<<<<< HEAD
   home: {
     titles: [
       "student",
@@ -127,16 +126,5 @@ export default {
       live: "https://technasium-portfolio.codefoxdev.com",
       code: "https://github.com/codefoxdev/technasium-portfolio"
     },
-=======
-  projects: [
-    {
-      name: "cym.center",
-      src: "/src/projects/shot-cym.center.png",
-      madeWith: [ "javascript", "html", "css" ],
-      description: "Cym center is a programming school in the Netherlands for kids 12-18 years old, where we make all kinds of projects, this website acts as a portfolio/showcase.",
-      live: "https://cym.center",
-      github: "https://github.com/codefoxdev/cym-center"
-    }
->>>>>>> 002b13a3d43ce511e4703387f93a7713bc3a1689
   ]
 }
