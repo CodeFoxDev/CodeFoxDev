@@ -3,6 +3,7 @@ import { on } from "./spa.js";
 
 function initListeners() {
   const title = document.querySelector("#title-type");
+  const prefix = document.querySelector("#title-prefix");
   if (!title) return;
 
   let index = 0;
@@ -13,6 +14,9 @@ function initListeners() {
     if (index < config.home.titles.length - 1) index++;
     else index = 0;
     const content = config.home.titles[index];
+    
+    if ((/[aeiou]/i).test(content.charAt(0)) == true) prefix.innerHTML = "I'm an";
+    else prefix.innerHTML = "I'm a";
 
     animationInProgress = true;
     await typeContent(title, content, 20);
