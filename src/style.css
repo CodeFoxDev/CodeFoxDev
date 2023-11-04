@@ -544,11 +544,23 @@ main > .front > .content .spacer {
 }
 
 .projects-items {
-  width: calc(100vw - calc(var(--line-margin-inline) * 2) - 2rem);
+  --width: calc(100vw - calc(var(--line-margin-inline) * 2) - 2rem);
+  --gap: 2rem;
+  --max-item-count: 4;
+  --min-item-width: 300px;
+
+  --item-width: calc(
+    calc(var(--width) - var(--max-item-count) * var(--gap)) /
+      var(--max-item-count)
+  );
+
+  width: var(--width);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-  grid-auto-rows: 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(max(var(--item-width), var(--min-item-width)), 1fr)
+  );
+  gap: var(--gap);
 }
 
 .project-small {
@@ -916,4 +928,25 @@ main.grid-full {
 
 .front.photography > .photo-grid .image:hover::after {
   transform: translate(-0.5rem, 0.5rem);
+}
+
+/* Transition element */
+.transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: var(--primary);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.transition > svg {
+  width: 50%;
+  height: 50%;
+  overflow: visible;
 }

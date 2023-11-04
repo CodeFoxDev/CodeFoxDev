@@ -1,4 +1,5 @@
 import "./js/projects.js";
+import "./js/home.js";
 import { on } from "./js/spa.js"; "./js/spa.js";
 
 function initListeners() {
