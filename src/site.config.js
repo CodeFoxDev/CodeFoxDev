@@ -63,9 +63,9 @@ export default {
   ],
   projects: [
     {
-      title: "Codefoxdev.com",
+      title: "codefoxdev.com",
       id: "codefoxdev",
-      description: "This is my personal portfolio, here I share some of my projects and skills",
+      description: "This is my personal portfolio, and also the website that you're currently viewing. This is v3 of my personal portfolio.",
       technologies: ["HTML", "CSS", "Javascript"],
       image: "/src/projects/shot-codefoxdev.com.png",
       live: "https://codefoxdev.com",
@@ -109,7 +109,7 @@ export default {
       code: "https://github.com/codefoxdev/homecontrols"
     },
     {
-      title: "Cym.center",
+      title: "cym.center",
       id: "cym-center",
       description: "A website I build for Cym Crea Computer, where the members can show off some projects they've created.",
       technologies: ["HTML", "CSS", "Javascript"],
@@ -125,6 +125,24 @@ export default {
       image: "/src/projects/shot-technasium-portfolio.png",
       live: "https://technasium-portfolio.codefoxdev.com",
       code: "https://github.com/codefoxdev/technasium-portfolio"
+    },
+    {
+      title: "v2.codefoxdev.com",
+      id: "v2-codefoxdev",
+      description: "This is v2 of my personal portfolio, I upped my designing skills a lot when I made this in the summer of 2023.",
+      technologies: ["HTML", "CSS", "Javascript"],
+      image: "/src/projects/shot-v2-codefoxdev.com.png",
+      live: "https://v2.codefoxdev.com",
+      code: "https://github.com/codefoxdev/codefoxdev/tree/v2",
+    },
+    {
+      title: "v1.codefoxdev.com",
+      id: "v1-codefoxdev",
+      description: "This is v1 of my personal portfolio, I used it to talk a bit about myself and show of some things I've made.",
+      technologies: ["HTML", "CSS", "Javascript"],
+      image: "/src/projects/shot-v1-codefoxdev.com.png",
+      live: "https://v1.codefoxdev.com",
+      code: "https://github.com/codefoxdev/codefoxdev/tree/v1",
     },
   ]
 }
