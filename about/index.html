@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Codefoxdev</title>
+    <link rel="shortcut icon" href="/src/assets/logo.svg" type="image/svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100;200;300;400;500;600;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <!-- Checkbox for nav menu -->
+    <input type="checkbox" name="nav-toggle" id="nav-toggle" hidden />
+    <nav class="nav flex-next sticky">
+      <div class="flex-row">
+        <a href="/">
+          <img src="/src/assets/logo.svg" alt="" class="logo" />
+        </a>
+        <p
+          class="archivo-black title"
+          data-scroll-threshold="0vh"
+          data-scroll-class="shown">
+          CODEFOXDEV
+        </p>
+      </div>
+      <div class="flex-next">
+        <div class="links flex-row">
+          <a href="/about" class="link line">About</a>
+          <a href="/projects" class="link line">Projects</a>
+          <a href="/contact" class="link line">Contact</a>
+        </div>
+        <div class="menu flex-row">
+          <label for="nav-toggle">
+            <span class="material-symbols-rounded pointer">menu</span>
+          </label>
+        </div>
+      </div>
+      <div class="nav-menu flex-list">
+        <a href="/" class="link line fw">
+          <span>Home</span>
+        </a>
+        <a href="/about" class="link line fw">
+          <span>About</span>
+        </a>
+        <a href="/photography" class="link line fw">
+          <span>Hobbies</span>
+        </a>
+        <a href="/projects" class="link line fw">
+          <span>Projects</span>
+        </a>
+        <a href="/design" class="link line fw">
+          <span>Design philosophy</span>
+        </a>
+        <a href="/contact" class="link line fw">
+          <span>Contact</span>
+        </a>
+        <a
+          href="https://github.com/codefoxdev"
+          target="_blank"
+          class="link line fw external">
+          <span>Github</span>
+        </a>
+        <a
+          href="https://npmjs.com/~codefoxdev"
+          target="_blank"
+          class="link line fw external">
+          <span>npm</span>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div class="front about flex-next">
+        <div class="left flex-list center margin-2">
+          <img src="/src/assets/photo-1.jpg" alt="" />
+        </div>
+        <div class="right flex-list gap center margin-2">
+          <h1 class="title">About me</h1>
+          <div class="flex-list gap-0">
+            <p class="archivo">
+              I’m a 15 year old student at Minkema college, the Netherlands. I
+              am a full stack android and web developer and a UI/UX designer
+              aiming to build accessible, user-friendly and extremely fast
+              applications, also I’m interested in linux, open source and
+              keeping the internet more private. I have been coding since 2020,
+              I started with scratch, and switched to Javascript in 2021, wich
+              I'm still using to this day. Along the way I've tried other
+              languages, like:
+            </p>
+            <ul class="archivo">
+              <li>Python</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>Dart</li>
+            </ul>
+          </div>
+          <div class="flex-row buttons">
+            <a href="/photography" class="button-inline border">
+              Hobbies
+              <span class="line"></span>
+              <span class="line bottom"></span>
+            </a>
+            <a href="/contact" class="button-inline border">
+              Contact me
+              <span class="line"></span>
+              <span class="line bottom"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="skills-about flex-list gap padding-left line-bottom"
+        id="skills">
+        <h1 class="title">Skills</h1>
+        <p class="archivo fw">
+          Over the last three years I’ve managed to learn a lot of things, here
+          are some of my most used languages and libraries/tools. I’m most
+          familiar with Javascript and its tools, like Nodejs and Vite. I’ve
+          also grown used to using Git for source control and working with
+          multiple contributers at once and using Vercel as website hosting for
+          all of my websites.
+        </p>
+        <div class="grid-row gap-3">
+          <div class="skill-item">
+            <img src="/src/icons/javascript.svg" alt="" />
+            <span>Javascript</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/python.svg" alt="" />
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/cpp.svg" alt="" />
+            <span>C++</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/cs.svg" alt="" />
+            <span>C#</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/kotlin.svg" alt="" />
+            <span>Kotlin</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/dart.svg" alt="" />
+            <span>Dart</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/nodejs.svg" alt="" />
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/vite.svg" alt="" />
+            <span>Vite</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/solid.svg" alt="" />
+            <span>Solid.js</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/git.svg" alt="" />
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/linux.svg" alt="" />
+            <span>Linux</span>
+          </div>
+          <div class="skill-item">
+            <img src="/src/icons/vercel.svg" alt="" />
+            <span>Vercel</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer"></div>
+    <div class="background absolute top left">
+      <div class="solid"></div>
+    </div>
+    <div class="background-darken"></div>
+    <div class="lines absolute top left">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="circle circle-about absolute"></div>
+    <!-- main module loads all correct scripts -->
+    <script src="/src/main.js" type="module"></script>
+  </body>
+</html>
