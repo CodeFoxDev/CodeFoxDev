@@ -26,6 +26,7 @@ body {
   height: 100%;
   position: relative;
   overflow-x: hidden;
+  /* W3C CSS validator says it's an unvalid value, but it is supported in all webkit browsers, and non-webkit browser resolve it correctly */
   overflow-y: overlay;
 }
 
@@ -529,7 +530,6 @@ main > .front > .content .spacer {
 
 .about-home .right .archivo {
   margin-inline: 2rem;
-  font-style: 500;
 }
 
 .about-home .right .buttons {
@@ -556,6 +556,7 @@ main > .front > .content .spacer {
 
   width: var(--width);
   display: grid;
+  /* W3C CSS Validator says it's invalid, but this is actually correct syntax */
   grid-template-columns: repeat(
     auto-fill,
     minmax(max(var(--item-width), var(--min-item-width)), 1fr)
@@ -676,7 +677,6 @@ main > .front > .content .spacer {
 
 .project-small .inline > .button span {
   transition: transform 0.3s ease;
-  /* animation: arrow_idle 0.3s ease forwards; */
 }
 
 .project-small h1 {
@@ -685,35 +685,6 @@ main > .front > .content .spacer {
 
 .project-small:hover .inline > .button span {
   transform: rotate(-45deg);
-  /* animation: arrow 0.3s ease forwards; */
-}
-
-@keyframes arrow {
-  49.8% {
-    transform: translate(1.5rem);
-    opacity: 1;
-  }
-  49.9% {
-    opacity: 0;
-  }
-  50% {
-    transform: translate(-1.5rem);
-  }
-  50.1% {
-    opacity: 1;
-  }
-  to {
-    transform: translate(0) rotate(-45deg);
-  }
-}
-
-@keyframes arrow_idle {
-  from {
-    transform: rotate(-45deg);
-  }
-  to {
-    transform: rotate(0);
-  }
 }
 
 /* About page */
@@ -891,6 +862,7 @@ main.grid-full {
   --min-width: 300px;
 
   display: grid;
+  /* W3C CSS Validator says it's invalid, but this is actually correct syntax */
   grid-template-columns: repeat(
     auto-fill,
     minmax(max(var(--item-width), var(--min-width)), 1fr)
