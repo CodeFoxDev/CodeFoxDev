@@ -9,58 +9,6 @@ export default {
       "linux user"
     ]
   },
-  skills: [
-    {
-      id: "Javascript",
-      icon: "/src/icons/javascript.svg"
-    },
-    {
-      id: "HTML",
-      icon: "/src/icons/html.svg"
-    },
-    {
-      id: "CSS",
-      icon: "/src/icons/css.svg"
-    },
-    {
-      name: "Node.js",
-      id: "Nodejs",
-      icon: "/src/icons/nodejs.svg"
-    },
-    {
-      id: "Vite",
-      icon: "/src/icons/vite.svg"
-    },
-    {
-      name: "Solid.js",
-      id: "Solidjs",
-      icon: "/src/icons/solid.svg"
-    },
-    {
-      id: "Flutter",
-      icon: "/src/icons/flutter.svg"
-    },
-    {
-      id: "Dart",
-      icon: "/src/icons/dart.svg"
-    },
-    {
-      id: "Linux",
-      icon: "/src/icons/linux.svg"
-    },
-    {
-      id: "Git",
-      icon: "/src/icons/git.svg"
-    },
-    {
-      id: "MongoDB",
-      icon: "/src/icons/mongo.svg"
-    },
-    {
-      id: "Vercel",
-      icon: "/src/icons/vercel.svg"
-    },
-  ],
   projects: [
     {
       title: "codefoxdev.com",
